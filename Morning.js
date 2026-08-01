@@ -8,6 +8,7 @@ const dateElement = document.querySelector("#date p");
 const sng = document.getElementById("sng-name");
 
 const lyrics = document.getElementById("lyrics")
+const h2 = document.getElementById("h2")
 
 // 🗓 Auto-update date
 const today = new Date();
@@ -54,6 +55,7 @@ if (currentHour >= 12 && currentHour < 18) {
   main.style.backgroundSize = "cover";
 main.style.backgroundPosition = "center";
   sng.textContent = "Lewis Capaldi - Someone You Loved"
+  h2.textContent = "Your presence is proof that magic is real";
 } else if (currentHour >= 18) {
   greeting.textContent = "Good Evening";
   document.body.style.background = "lavender";
@@ -64,6 +66,7 @@ main.style.backgroundPosition = "center";
   main.style.backgroundSize = "cover";
 main.style.backgroundPosition = "center";
   sng.textContent = "Alex Warren - Ordinary"
+  h2.textContent = "Your smile shines brighter than midnight stars";
 } else {
   greeting.textContent = "Good Morning";
   document.body.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
